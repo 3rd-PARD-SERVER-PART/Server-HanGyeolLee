@@ -13,16 +13,10 @@ public class HiController {
     @RequestMapping("/hi")
     public String hi(@RequestParam Map<String, Objects> paraMap) {
         return "이한결/23/전산심화/음악듣기\n" +
-                "여기서 부터는 받은것 : "
-
-//                paraMap.get("name")+"/"
-//                +paraMap.get("age")+"/"
-//                +paraMap.get("major")+"/"
-//                +paraMap.hobby;
-        return "hello.html";
+                "\n여기서 부터는 받은것 : "+
+                paraMap.get("name")+"/"
+                +paraMap.get("age")+"/"
+                +paraMap.get("major")+"/"
+                +paraMap.get("hobby");
     }
-
-
-
-
 }
