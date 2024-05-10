@@ -1,13 +1,13 @@
-package com.pard.hw4.user.service;
+package com.pard.hw5.user.service;
 
 
-import com.pard.hw4.book.entity.Book;
-import com.pard.hw4.book.repo.BookRepo;
-import com.pard.hw4.user.dto.loan.UserLoanDTO;
-import com.pard.hw4.user.dto.user.UserCreateDTO;
-import com.pard.hw4.user.entity.UserLoanHistory;
-import com.pard.hw4.user.repo.UserLoanRepo;
-import com.pard.hw4.user.repo.UserRepo;
+import com.pard.hw5.book.entity.Book;
+import com.pard.hw5.book.repo.BookRepo;
+import com.pard.hw5.user.dto.loan.UserLoanDTO;
+import com.pard.hw5.user.dto.user.UserCreateDTO;
+import com.pard.hw5.user.entity.UserLoanHistory;
+import com.pard.hw5.user.repo.UserLoanRepo;
+import com.pard.hw5.user.repo.UserRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

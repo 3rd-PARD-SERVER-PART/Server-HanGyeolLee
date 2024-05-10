@@ -1,6 +1,6 @@
-package com.pard.hw4.user.entity;
+package com.pard.hw5.user.entity;
 
-import com.pard.hw4.user.dto.loan.UserLoanDTO;
+import com.pard.hw5.user.dto.loan.UserLoanDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
 
-import com.pard.hw4.book.entity.Book;
+import com.pard.hw5.book.entity.Book;
 
 @Entity
 @Getter

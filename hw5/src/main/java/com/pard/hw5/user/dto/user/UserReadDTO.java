@@ -1,8 +1,8 @@
-package com.pard.hw4.user.dto.user;
+package com.pard.hw5.user.dto.user;
 
 
-import com.pard.hw4.user.dto.loan.UserLoanDTO;
-import com.pard.hw4.user.entity.User;
+import com.pard.hw5.user.dto.loan.UserLoanDTO;
+import com.pard.hw5.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

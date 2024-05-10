@@ -1,8 +1,8 @@
-package com.pard.hw4.user.dto.loan;
+package com.pard.hw5.user.dto.loan;
 
-import com.pard.hw4.user.dto.user.UserReadDTO;
-import com.pard.hw4.user.entity.User;
-import com.pard.hw4.user.entity.UserLoanHistory;
+import com.pard.hw5.user.dto.user.UserReadDTO;
+import com.pard.hw5.user.entity.User;
+import com.pard.hw5.user.entity.UserLoanHistory;
 import lombok.Getter;
 import lombok.Setter;
 

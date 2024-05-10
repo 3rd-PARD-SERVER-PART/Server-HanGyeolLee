@@ -1,10 +1,10 @@
-package com.pard.hw4.user.service;
+package com.pard.hw5.user.service;
 
-import com.pard.hw4.user.dto.loan.UserLoanDTO;
-import com.pard.hw4.user.dto.user.UserCreateDTO;
-import com.pard.hw4.user.dto.user.UserReadDTO;
-import com.pard.hw4.user.entity.User;
-import com.pard.hw4.user.repo.UserRepo;
+import com.pard.hw5.user.dto.loan.UserLoanDTO;
+import com.pard.hw5.user.dto.user.UserCreateDTO;
+import com.pard.hw5.user.dto.user.UserReadDTO;
+import com.pard.hw5.user.entity.User;
+import com.pard.hw5.user.repo.UserRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -31,4 +31,5 @@ public class UserService {
                                         .collect(Collectors.toList())))
                 .collect(Collectors.toList());
     }
+
 }

@@ -1,11 +1,11 @@
-package com.pard.hw4.user.controller;
+package com.pard.hw5.user.controller;
 
 
-import com.pard.hw4.user.dto.loan.UserLoanDTO;
-import com.pard.hw4.user.dto.user.UserCreateDTO;
-import com.pard.hw4.user.dto.user.UserReadDTO;
-import com.pard.hw4.user.service.UserLoanService;
-import com.pard.hw4.user.service.UserService;
+import com.pard.hw5.user.dto.loan.UserLoanDTO;
+import com.pard.hw5.user.dto.user.UserCreateDTO;
+import com.pard.hw5.user.dto.user.UserReadDTO;
+import com.pard.hw5.user.service.UserLoanService;
+import com.pard.hw5.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
