@@ -3,6 +3,7 @@ package org.example.pard.member.service;
 import lombok.RequiredArgsConstructor;
 import org.example.pard.member.dto.MemberCreateDTO;
 import org.example.pard.member.dto.MemberReadDTO;
+import org.example.pard.member.dto.MemberUpdateDTO;
 import org.example.pard.member.entity.Member;
 import org.example.pard.member.repo.MemberRepo;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,7 @@ public class MemberService {
     // 유저(멤버) 생성
     public void createMember(MemberCreateDTO dto) {
         // CreateDTO 를 entity 로 변환후 저장
-        memberRepo.save(new Member().toEntity(dto));
+        memberRepo.save(new Member().update(dto));
     }
 
     // 아이디로 유저(멤버) 찾기
@@ -50,4 +51,14 @@ public class MemberService {
     }
 
 
+    public void updateMember(Long id, MemberUpdateDTO dto) {
+//        Member member;
+//        if (memberRepo.findById(id).isPresent()) {
+//            member = memberRepo.findById(id).get();
+//            memberRepo.save(member.update(id, dto));
+//        }else{
+//            throw ()
+//        }
+        Member member = memberRepo.findById(id).orElseThrow();
+    }
 }

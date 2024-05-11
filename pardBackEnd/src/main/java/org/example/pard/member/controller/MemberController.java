@@ -3,6 +3,7 @@ package org.example.pard.member.controller;
 import lombok.RequiredArgsConstructor;
 import org.example.pard.member.dto.MemberCreateDTO;
 import org.example.pard.member.dto.MemberReadDTO;
+import org.example.pard.member.dto.MemberUpdateDTO;
 import org.example.pard.member.service.MemberService;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/pard")
+//@CrossOrigin(origins = "*") // 좋은 방식 아님
 public class MemberController {
     private final MemberService memberService;
 
@@ -20,6 +22,12 @@ public class MemberController {
     public String createMember(@RequestBody MemberCreateDTO dto) {
         memberService.createMember(dto);
         return "파드에 가입을 축하드립니다.";
+    }
+
+    @PatchMapping("/update/{id}")
+    public String updateMember(@PathVariable Long id, @RequestBody MemberUpdateDTO dto){
+        memberService.updateMember(id, dto);
+        return "수정 완료";
     }
 
     // 전체 유저 받아오기

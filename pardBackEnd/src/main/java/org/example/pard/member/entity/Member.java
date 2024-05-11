@@ -9,6 +9,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.example.pard.member.dto.MemberCreateDTO;
+import org.example.pard.member.dto.MemberUpdateDTO;
 
 @Entity
 @Getter
@@ -29,8 +30,16 @@ public class Member {
     private int age;
 
     // entity 로 변환
-    public Member toEntity(MemberCreateDTO dto) {
+    public Member update(MemberCreateDTO dto) {
         return Member.builder()
+                .age(dto.getAge())
+                .part(dto.getPart())
+                .name(dto.getName())
+                .build();
+    }
+    public Member update(Long id, MemberUpdateDTO dto) {
+        return Member.builder()
+                .id(id)
                 .age(dto.getAge())
                 .part(dto.getPart())
                 .name(dto.getName())
